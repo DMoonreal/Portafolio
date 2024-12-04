@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Porfirio Daniel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-100 bg-pattern">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-gray-800/90 backdrop-blur-sm"
+    >
+      <div class="container mx-auto px-4 py-3 flex justify-center space-x-6">
+        <a
+          href="#sobre-mi"
+          class="text-sky-400 hover:text-sky-300 transition transform hover:scale-110"
+        >
+          <i data-feather="user" class="inline-block mr-2"></i>Sobre Mí
+        </a>
+        <a
+          href="#educacion"
+          class="text-sky-400 hover:text-sky-300 transition transform hover:scale-110"
+        >
+          <i data-feather="book" class="inline-block mr-2"></i>Educación
+        </a>
+        <a
+          href="#habilidades"
+          class="text-sky-400 hover:text-sky-300 transition transform hover:scale-110"
+        >
+          <i data-feather="code" class="inline-block mr-2"></i>Habilidades
+        </a>
+        <a
+          href="#proyectos"
+          class="text-sky-400 hover:text-sky-300 transition transform hover:scale-110"
+        >
+          <i data-feather="layers" class="inline-block mr-2"></i>Proyectos
+        </a>
+      </div>
+    </nav>
+
+    <div class="container mx-auto px-4 pt-20 space-y-12">
+      <section
+        id="sobre-mi"
+        class="bg-gray-800 rounded-xl p-8 shadow-2xl border border-sky-900/30 glowing-border"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8"
+        >
+          <div
+            class="w-48 h-48 rounded-full overflow-hidden border-4 border-sky-600 transform hover:scale-105 transition"
+          >
+            <img
+              src="/img/perfil.jpeg"
+              alt="Foto de Perfil"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="text-center md:text-left">
+            <h1 class="text-4xl font-bold text-sky-400 mb-4">
+              Porfirio Daniel Jaime Monreal
+            </h1>
+
+            <div
+              class="flex justify-center md:justify-start items-center space-x-4 mb-4"
+            >
+              <span class="text-gray-400">Contacto:</span>
+              <div class="flex items-center bg-gray-800 rounded-md px-3 py-1">
+                <input
+                  type="text"
+                  id="email"
+                  value="pjaimemonreal@gmail.com"
+                  class="bg-transparent text-sky-400 w-full"
+                  readonly
+                />
+                <button
+                  onclick="copyEmail()"
+                  class="ml-2 text-sky-400 hover:text-sky-300 transition"
+                >
+                  <i data-feather="copy" class="w-5 h-5"></i>
+                </button>
+              </div>
+            </div>
+
+            <p class="text-gray-300 max-w-2xl">
+              HOLA soy Porfirio Ingeniero en Software en formación, con
+              experiencia en desarrollo web frontend y backend, especializado en
+              tecnologías modernas como Node.js, React, SQL y JavaScript.
+              Apasionado por la creación de soluciones innovadoras y la
+              optimización de experiencias de usuario.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="educacion"
+        class="bg-gray-800 rounded-xl p-8 shadow-2xl border border-sky-900/30"
+      >
+        <h2 class="text-3xl font-bold text-sky-400 mb-6 text-center">
+          Educación
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div
+            class="bg-gray-700 p-6 rounded-lg hover:bg-gray-700/80 transition"
+          >
+            <h3 class="text-xl font-semibold text-sky-300 mb-2">
+              <i data-feather="activity" class="inline-block mr-2"></i>
+              Ingeniería en Software
+            </h3>
+            <p class="text-gray-400">Universidad de Colima | 2025</p>
+            <p class="text-gray-300 mt-2">
+              Formación académica enfocada en desarrollo web, programación
+              avanzada y diseño de software.
+            </p>
+            <h3 class="text-xl font-semibold text-sky-300 mb-2">
+              <i data-feather="activity" class="inline-block mr-2"></i>
+              Tecnico Analista Programador
+            </h3>
+            <p class="text-gray-400">Universidad de Colima | 2021</p>
+            <p class="text-gray-300 mt-2">
+              Adquirí habilidades clave en lógica de programación, bases de
+              datos y desarrollo de aplicaciones móviles, lo cual complementa mi
+              perfil como Ingeniero en Software.
+            </p>
+          </div>
+          <div
+            class="bg-gray-700 p-6 rounded-lg hover:bg-gray-700/80 transition"
+          >
+            <h3 class="text-xl font-semibold text-sky-300 mb-2">
+              <i data-feather="award" class="inline-block mr-2"></i>
+              Certificaciones
+            </h3>
+            <p class="text-gray-400">Certificación en Inglés - Nivel B2</p>
+            <p class="text-gray-300 mt-2">
+              Obtuve la certificación EnglishScore Core Skills, que valida mis
+              habilidades en inglés a un nivel B2 según el Marco Común Europeo
+              de Referencia (MCER). Esta certificación respalda mi capacidad
+              para comunicarme con fluidez en contextos profesionales e
+              internacionales.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="habilidades"
+        class="bg-gray-800 rounded-xl p-8 shadow-2xl border border-sky-900/30"
+      >
+        <h2 class="text-3xl font-bold text-sky-400 mb-6 text-center">
+          Habilidades Técnicas
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fab fa-js-square mr-2"></i>JavaScript
+          </span>
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fab fa-php mr-2"></i>PHP
+          </span>
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fab fa-node-js mr-2"></i>Node.js
+          </span>
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fas fa-database mr-2"></i>SQL
+          </span>
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fab fa-bootstrap mr-2"></i>Bootstrap
+          </span>
+          <span
+            class="bg-sky-900/50 text-sky-300 px-4 py-2 rounded-full hover:bg-sky-900/70 transition transform hover:scale-105"
+          >
+            <i class="fas fa-code mr-2"></i>C++
+          </span>
+        </div>
+      </section>
+      <section
+        id="proyectos"
+        class="bg-gray-800 rounded-xl p-8 shadow-2xl border border-sky-900/30"
+      >
+        <h2 class="text-3xl font-bold text-sky-400 mb-6 text-center">
+          Proyectos Destacados
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/Tesis.png"
+              alt="Vista Previa Proyecto Tesis"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-sky-300 mb-2">
+                Visualizador de Tesis
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Aplicación para gestionar tesis universitarias, con soporte de
+                IA generativa para mejora de contenido.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href=""
+                  target="_blank"
+                  class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1 rounded-xl flex items-center space-x-2"
+                >
+                  <i data-feather="github" class="w-4 h-4"></i>
+                  <span>PRIVADO</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/jwt.png"
+              alt="Vista Previa Proyecto JWT"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-sky-300 mb-2">
+                JWT Práctica
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Proyecto de práctica implementando autenticación JSON Web Tokens
+                (JWT) para gestión de usuarios.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/DMoonreal/JWT-Practica"
+                  target="_blank"
+                  class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1 rounded-xl flex items-center space-x-2"
+                >
+                  <i data-feather="github" class="w-4 h-4"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/fmed.png"
+              alt="Vista Previa Proyecto FMED-Godot"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-sky-300 mb-2">
+                FMED-Godot Game
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Aplicación móvil desarrollada en Godot para ayudar a las
+                personas a recordar su medicación.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/DMoonreal/-FMED-Godot-Game"
+                  target="_blank"
+                  class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1 rounded-xl flex items-center space-x-2"
+                >
+                  <i data-feather="github" class="w-4 h-4"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
